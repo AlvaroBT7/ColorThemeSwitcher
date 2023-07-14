@@ -1,0 +1,78 @@
+.App {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  background-color: var(--dark-background-color);
+  color: var(--dark-color);
+  min-height: 100vh;
+  transition: all 0.25s;
+}
+
+.App.light {
+  background-color: var(--light-background-color);
+  color: var(--light-color);
+}
+
+.App button,
+.App input,
+.App .user-card {
+  display: flex;
+  place-items: center;
+  background-color: var(--dark-card);
+  color: var(--dark-color);
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid transparent;
+  outline: 2px solid transparent;
+  border-radius: 8px;
+  cursor: pointer;
+  user-select: none;
+  transition: all 0.25s;
+}
+
+.App button.light,
+.App input.light,
+.App .user-card.light {
+  background-color: var(--light-card);
+  color: var(--light-color);
+}
+
+.App button:hover,
+.App input:hover,
+.App .user-card:hover {
+  border-color: var(--selector);
+}
+
+.App button:focus,
+.App input:focus {
+  outline-color: var(--dark-color);
+  border-color: transparent;
+}
+
+.App button.light:focus,
+.App input.light:focus {
+  outline-color: var(--light-color);
+  border-color: transparent;
+}
+.App .button-container {
+  display: flex;
+  justify-content: flex-end;
+  padding: 18px 50px;
+  width: 100vw;
+}
+
+.App .card-container {
+  display: flex;
+  flex-flow: row wrap;
+  align-content: flex-start;
+  justify-content: center;
+  padding: 18px 50px;
+}
+
+@media only screen and (max-width: 400px) {
+  .App .button-container,
+  .card-conatiner {
+    padding-top: 9px;
+    padding-bottom: 9px;
+  }
+}

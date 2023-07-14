@@ -1,0 +1,30 @@
+.ThemeButton {
+  display: flex;
+  justify-content: space-between;
+  width: 130px;
+  height: 40px;
+}
+
+.ThemeButton svg {
+  font-size: 1.2em;
+  margin-left: 10px;
+  transition: all 0.25s;
+}
+
+.ThemeButton.is-mobile {
+  width: auto;
+  height: auto;
+}
+
+.ThemeButton.is-mobile svg {
+  font-size: 1.5em;
+  margin: 0;
+}
+
+.ThemeButton:hover svg {
+  font-size: 1.35em;
+}
+
+.ThemeButton.is-mobile:hover svg {
+  font-size: 1.5em;
+}
